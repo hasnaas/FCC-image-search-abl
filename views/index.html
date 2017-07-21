@@ -1,0 +1,66 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC api projects</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+  <body>
+    <header>
+      
+        <h1 class="text-center">
+          API projects: Image Search Abstraction Layer
+        </h1>
+      
+      
+    </header>
+
+    <main>
+     <div class="jumbotron">
+       <ul>
+         <li>You can pass key words as a parameters and you will receive search results in  JSON format.</li>
+         <li>You can paginate results using the offset parameter.</li>
+         <li>You can browse recent search queries.</li>
+       </ul>
+      </div>
+      <h2>
+        Example search:
+      </h2>
+      https://image-search-abl.glitch.me/search/lolcats funny?offset=10 <br/>
+      https://image-search-abl.glitch.me/latest (browsing recent search)
+      <h2>
+        Sample output
+      </h2>
+      url	: "https://i.ytimg.com/vi/tRzXptpC3_U/hqdefault.jpg" <br/>
+      snippet	: "funny lolcats and loldogs - YouTube"<br/>
+      thumbnail	: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dKvb6pMA0bod00g0v1Bk3YakSY7H4HYwpu268AqUK8pPiSdlUh9pEnYh"<br/>
+      context	: "https://www.youtube.com/watch?v=tRzXptpC3_U"<br/>
+    </main>
+
+    <footer class="text-center">
+      <a href="https://github.com/hasnaas">
+        Made by Hasna
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
